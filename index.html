@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .blog-preview-card {
+      display: flex;
+      flex-flow: column;
+      width: 320px;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      gap: 15px;
+      font-family: Figtree;
+      border: 1px solid black; 
+
+      /* shadow */
+      box-shadow: 0px 0px rgb(0, 0, 0, 0);
+      transition: box-shadow 0.4s ease-in;
+
+      /* animation*/
+      animation: 
+        500ms ease-in-out 0ms forwards descend;
+    }
+
+    .blog-preview-card:hover{
+      animation: 
+        500ms ease-in-out 0ms forwards hover-up;
+      box-shadow: 8px 8px rgb(0, 0, 0, 0.5);
+    }
+
+    @keyframes hover-up{
+      from{
+        transform: translate(0px,0px);
+      }
+
+      to{
+        transform: translate(-8px,-8px);
+      }
+    }
+
+    @keyframes descend{
+      from{
+        transform: translate(-8px,-8px);
+      }
+
+      to{
+        transform: translate(0px,0px);
+      }
+    }  
+
+    .blog-preview-card > * {
+      padding: 0 20px 0 20px;
+    }
+
+    .image {
+      width: 280px;
+      padding-top: 20px;
+    }
+
+    .image img {
+      width: 100%;
+    }
+
+    .tag {
+      color: hsl(0, 0%, 7%);
+      font-size: 9pt;
+      font-weight: bold;
+      background-color: hsl(47, 88%, 63%);
+      padding: 5px 10px;
+      width: fit-content;
+      border-radius: 5px
+      
+    }
+
+    .publish-date {
+      font-weight: 500;
+      font-size: 9pt;
+    }
+
+    .heading {
+      font-size: 15pt;
+      font-weight: 800;
+    }
+
+    .description {
+      font-size: 10pt;
+      color:  hsl(0, 0%, 42%);
+      
+    }
+
+    .profile {
+      padding-bottom: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile img{
+      max-width: 10%;
+    }
+
+    .profile span{
+      font-size: 9pt;
+      font-weight: bold;
+    }
+
+    body {
+
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(47, 88%, 63%);
+      min-height: 100vh;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="blog-preview-card" class="blog-preview-card">
+    <div id="image" class="image">
+      <img src="assets/images/illustration-article.svg" alt="shapes">
+    </div>
+    <div>
+      <div id="tag" class="tag">
+        Learning
+      </div>
+    </div>
+    <div id="publish-date" class="publish-date">
+      Published 21 Dec 2023
+    </div>
+    <div id="heading" class="heading">
+      HTML & CSS foundations
+    </div>
+    <div id="description" class="description">These languages are the backbone of every website, defining structure,
+      content, and presentation.</div>
+    <div id="profile" class="profile"><img src="assets/images/image-avatar.webp"><span>Greg Hooper</span></div>
+  </div>
+
+<!--
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  -->
+</body>
+
+</html>
