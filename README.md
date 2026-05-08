@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/yoranguy/mentorfrontend-blog-preview-card)
+- Solution URL: [https://github.com/yoranguy/mentorfrontend-blog-preview-card](https://github.com/yoranguy/mentorfrontend-blog-preview-card)
 - Live Site URL: [https://mentorfrontend-blog-preview-card.vercel.app/](https://mentorfrontend-blog-preview-card.vercel.app/)
 
 ## My process
